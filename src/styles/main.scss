@@ -1,6 +1,8 @@
 // ------imports----
 @use 'hero';
 @use 'variaveis';
+@use 'shows';
+@use 'plans';
 
 // -----fonts-----
 @font-face {
@@ -20,11 +22,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
 }
 
 body {
     background-color: variaveis.$corDeFundo;
-    font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
@@ -66,4 +68,19 @@ body {
     @include text (18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: #6421FF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    border: none;
+
 }
