@@ -2,12 +2,16 @@
 
 .shows {
     padding: 2vw 5.6vw;
+    min-height: 50vw;
     &__list {
         display: none;
         margin-top: 44px;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 12px;
-        min-height: 50vw;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active {
             display: grid;
@@ -23,6 +27,13 @@
     &__tabs {
         display: flex;
         justify-content: center;
+
+        @media (max-width:768px){
+            white-space: nowrap;
+            overflow-x: hidden;
+            padding-left: 20px;
+        }
+
         &__button {
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
@@ -37,6 +48,9 @@
         }
         &__button--is-active {
             border-bottom: 5px solid variaveis.$corTextoSecundario;
+        }
+        @media (max-width: 768){
+            font-size: 16px;
         }
     }
 }
