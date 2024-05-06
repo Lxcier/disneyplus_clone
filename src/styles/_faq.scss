@@ -47,14 +47,14 @@
                 .faq__questions__item__answer {
                     height: auto;
                     padding-bottom: 24px;
-                    transition: height, .5s ease;
+                    transition: height, 1s ease;
                     
                     ul {
                         margin-top: 16px;
                         padding-left: 40px;
-
                         li {
                             margin-top: 24px;
+                            transition: height, 1s ease;
                         }
                     }
                 }
